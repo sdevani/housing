@@ -10,8 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "address-validator": "^0.2.2",
+    "amortize": "^0.2.3",
+    "bluebird": "^3.3.1",
     "body-parser": "^1.15.0",
     "ejs": "^2.4.1",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "node-zillow": "0.0.5",
+    "underscore": "^1.8.3"
   }
 }

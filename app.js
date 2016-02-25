@@ -1,5 +1,8 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 var port = process.env.PORT || 3000;
 
@@ -10,7 +13,7 @@ app.get('/', function(req, res) {
 });
 
 app.post('/evaluate', function(req, res) {
-  res.send('Not functional yet!');
+  res.send('you got it ' + req.body.address);
 });
 
 app.listen(port, function () {
